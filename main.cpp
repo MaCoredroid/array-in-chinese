@@ -30,6 +30,6 @@ int main()
         }
         else cout<<"这太过份了啊\n";
     }
-    array.cleanup();
+
     return 0;
 }

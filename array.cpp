@@ -20,8 +20,3 @@ bool DoubleArray::fatch(int index,double &value)
     value=storage[index-low];
     return true;
 }
-void DoubleArray::cleanup()
-{
-    if(storage)
-        delete[]storage;
-}

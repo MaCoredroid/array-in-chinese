@@ -12,7 +12,13 @@ struct DoubleArray
     }
     bool insert (int index,double value);
     bool fatch(int index,double &value);
-    void cleanup();
+    ~DoubleArray()
+    {
+        if(storage)
+        {
+            delete[] storage;
+        }
+    }
 };
 
 
