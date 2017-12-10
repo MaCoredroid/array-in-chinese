@@ -6,7 +6,7 @@ struct DoubleArray
     int low;
     int high;
     double *storage;
-    DoubleArray(int l=0,int h=0):low(l),high(h)
+    DoubleArray(int a=0,int b=0):low(a),high(b)
     {
        storage =new double[high-low+1];
     }
