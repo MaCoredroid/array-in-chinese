@@ -5,16 +5,12 @@ using namespace std;
 
 int main()
 {
-    DoubleArray array;
+
     double value=0;
     int low,high,i=0;
     cout<<"请输入数组的下标范围:";
     cin>>low>>high;
-    if(!array.initialize(low,high))
-    {
-        cout<<"分配空间失败";
-        return 1;
-    }
+    DoubleArray array;
     for(i=low;i<=high;i++)
     {
         cout<<"请输入第"<<i<<"个元素";
